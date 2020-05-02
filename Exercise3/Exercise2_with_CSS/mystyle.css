@@ -1,0 +1,119 @@
+body {
+    background-color: linen;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    font-size: 24px;
+}
+
+div {
+    font-size: 18px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    font-size: 18px;
+}
+
+ol {
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    font-size: 18px;
+}
+
+button {
+    background-color: Orange;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+a {
+    font-size: 18px;
+}
+
+/* unvisited link */
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: rgb(146, 0, 139);
+}
+
+/* selected link */
+
+a:active {
+    color: blue;
+}
+
+img {
+    border-radius: 30%;
+    float: right;
+}
+
+#contact {
+    float: left;
+}
+
+img:hover {
+    transform: scaleX(-1);
+}
+
+span.problem {
+    font-size: 120%;
+    color: red;
+}
+
+span.linkOpen {
+    font-size: 120%;
+    color: rgb(0, 255, 98);
+}
+
+#Onoma, #Email, #Thema, #Munhma {
+    background-color: yellow;
+}
