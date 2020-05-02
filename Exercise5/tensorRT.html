@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MySite - Home</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1" id="item1">
+            <h1>TensorRT</h1>
+        </div>
+        <div class="item2">
+            <br>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jetsonNano.html">Jetson Nano</a></li>
+                <li><a class="active" href="tensorRT.html">TensorRT</a></li>
+            </ul>
+
+        </div>
+        <div class="item3">
+            <p>NVIDIA TensorRT is an SDK for high-performance deep learning inference. It includes a
+                deep learning inference optimizer and runtime that delivers low latency and high-throughput for deep
+                learning inference applications.
+                <br><br>TensorRT-based applications perform up to 40x faster than CPU-only
+                platforms during inference. With TensorRT, you can optimize neural network models trained in all
+                major
+                frameworks, calibrate for lower precision with high accuracy, and finally deploy to hyperscale data
+                centers, embedded, or automotive product platforms. TensorRT is built on CUDA, NVIDIA’s parallel
+                programming model, and enables you to optimize inference for all deep learning frameworks leveraging
+                libraries, development tools and technologies in CUDA-X for artificial intelligence, autonomous
+                machines, high-performance computing, and graphics. It provides INT8 and FP16 optimizations for
+                production deployments of deep learning inference applications such as video streaming, speech
+                recognition, recommendation and natural language processing. Reduced precision inference
+                significantly
+                reduces application latency, which is a requirement for many real-time services, auto and embedded
+                applications. Into TensorRT we can import trained models from every deep learning framework. After
+                applying optimizations, TensorRT selects platform specific kernels to maximize performance on Tesla
+                GPUs
+                in the data center, Jetson embedded platforms, and NVIDIA DRIVE autonomous driving platforms.
+                <br><br>To use AI
+                models in data center production, the TensorRT Inference Server is a containerized microservice that
+                maximizes GPU utilization and runs multiple models from different frameworks concurrently on a node.
+            </p>
+        </div>
+        <div class="item4">
+            <img width="350" height="250" src="trt-logo.png" alt="trt-logo">
+            <br>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="480x320/trt-info.png">
+                <source media="(max-width: 900px)" srcset="800x653/trt-info.png">
+                    <img width="350" height="250" src="trt-info.png" alt="trt-info">
+              </picture>
+            
+            <h4><ins>Useful Links</ins></h4>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/7kJ-jph9gCw"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="item5">
+            <br><br>
+            <hr>
+            <div>&copy; Copyright 2020 Giannis Fourfouris</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

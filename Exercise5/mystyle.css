@@ -1,0 +1,133 @@
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container>#item1 {
+    background-color: rgb(83, 59, 22);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px 50px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: orange;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    border-style: groove;
+    justify-content: center;
+}
+
+.flex-container>div {
+    background-color: white;
+    margin: 0;
+    padding: 50px;
+    font-size: 30px;
+}
+
+button {
+    background-color: Orange;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 20px;
+    border: yellow;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+iframe{
+    border: 0;
+}
+@font-face {
+    font-family: 'SansationLight';
+    font-weight:bold;
+    src: local('SansationLight'), url('./SansationLight.woff') format('woff'), url('./SansationLight.ttf') format('truetype');
+}
+
+* {
+    font-family: 'SansationLight';
+
+}
+
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'header header' 'menu menu' 'main right' 'footer footer';
+    }
+    img{max-width: 100%;}
+    .flex-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'header' 'menu' 'main' 'right' 'footer';
+    }
+    .flex-container{
+    flex-direction: column;
+    }
+    img{max-width: 100%;}
+}
+
