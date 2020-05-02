@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ιωάννης Φουρφουρής - Εργασίες</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1" id='Header'>
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 600px)" srcset="480x320/headerPhoto.png">
+                <source media="(max-width: 900px)" srcset="800x653/headerPhoto.png">
+                    <img src="headerPhoto.jpg" alt='headerPhoto' id='headerPhoto'>
+              </picture>
+            </a>
+          </div>
+        <div class="item2" id='menu'>
+            <br>
+            <img src='img_me.jpg' width="150" height="150" alt='Image of me' id='img_me' onclick="changeImage()">
+            <h2 class='menuContent' id='menuName'>Ιωάννης Φουρφουρής</h2>
+            <p class='menuContent' id='menuDescription'>Φοιτητητής του <a href="https://www.aueb.gr/"
+                id='whiteLink' target="_blank">Οικονομικού
+                    <br>Πανεπιστημιού Αθηνών</a></p>
+            <br>
+            <div class="vertical-menu">
+                <a href="index.html" id='whiteLink2'>Σχετικά με μένα</a>
+                <a href="projects.html" class="active">Ακαδημαϊκές Εργασίες</a>
+                <a href="hobbies.html" id='whiteLink3'>Ενδιαφέροντα</a>
+                <a href="contact.html" id='whiteLink4'>Επικοινωνία</a>
+                <a href="prototypes.html" id='whiteLink5'>Πρωτότυπα</a>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="flex-container-menu">
+                <div>
+                    <a href="https://www.facebook.com/giannisfourfouris" target="_blank">
+                        <picture>
+                          <source media="(max-width: 600px)" srcset="480x320/fb_logo.png">
+                          <source media="(max-width: 900px)" srcset="800x653/fb_logo.png">
+                            <img src="fb_logo.png"  alt='fb_logo' id='fb_logo'>
+                        </picture>
+                      </a>
+                      <a href="https://gr.linkedin.com/in/giannis-fourfouris-83b37819b" target="_blank">
+                        <picture>
+                          <source media="(max-width: 600px)" srcset="480x320/linked_in_logo.png">
+                          <source media="(max-width: 900px)" srcset="800x653/linked_in_logo.png">
+                            <img src="linked_in_logo.png" alt='linked_in_logo' id='linked_in_logo'>
+                        </picture>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="item3" id='Main'>
+            <h1 id='about'>Ακαδημαϊκές Εργασίες</h1>
+            <ul>
+                <li>
+                    <a href="https://github.com/giannisfourfouris/Object-Detection-Tensorflow-Lite">Object Detection App:</a> Υλοποίηση εφαρμογής η οποία εντοπίζει τη θέση και το είδος αντικείμένων,
+                     σε πραγματικο χρόνο, με χρήση της κάμερας του κινήτου.
+                </li>
+                <li>
+                    <a href="https://github.com/giannisfourfouris/Artificial-Intelligence-Project-1">Othello Project:</a> Υλοποίηση προγράμματος, το οποίο προσομοιώνει το παιχνίδι Othello,
+                    μεταξύ ενός παίκτη και του υπολογιστή, με τη βοήθεια του Mini-Max αλγορίθμου.
+                </li>
+                <li>
+                    <a href="https://github.com/giannisfourfouris/Artificial-Intelligence-Project-2">Spam Filter:</a> Υλοποίηση προγράμματος, το οποίο ελέγχει αν ένα εισερχόμενο email
+                    είναι Spam ή όχι, με χρήση των αλγορίθμων Naive Bayes, ID3, Logistic Regression.
+                </li>
+                <li>
+                    <a href="https://github.com/giannisfourfouris/Distributed-Systems-Project">POIs Recommendation System:</a> Υλοποίηση προγράμματος, το οποίο με βάση ορισμένα
+                    check in από διάφορα μέρη μιας πόλης, προτείνει πιθανά άλλα ενδιαφέροντα, με
+                    χρήση του Matrix Factorization.
+                </li>
+                <li>
+                    <a href="https://github.com/giannisfourfouris/Software-Technology-Project">Εφαρμογή ενημέρωσης για δρομολόγια αστικών συγκοινωνιών:</a> Υλοποίηση μιας
+                    εφαρμογής, με σκοπό την ενημέρωση των επιβατών για στάσεις που βρίσκονται
+                    κοντά τους και για τις ώρες αφίξεις των λεωφορείων στις διάφορες στάσεις, όπως
+                    προκύπτει με βάση τη τοποθεσία τους.
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="item4" id='Footer'>
+            <br>
+            <div class='lineFooter'>
+                <br>
+                <img src='hermes.png' width="100" height="100" alt='hermes' id='hermes'>
+                <img src='LogoSmallPlhroforikh.png' width="180" height="75" alt='LogoSmallPlhroforikh'
+                    id='LogoSmallPlhroforikh'>
+            </div>
+            <br><br><br><br><br> <br>
+            <div class='lineFooter'>
+                <br>
+                <div id="copyright">&copy; Giannis Fourfouris.All rights reserved.
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+
+</html>

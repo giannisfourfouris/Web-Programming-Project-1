@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ιωάννης Φουρφουρής - Αρχική</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="item1" id='Header'>
+      <a href="index.html">
+        <picture>
+          <source media="(max-width: 600px)" srcset="480x320/headerPhoto.png">
+          <source media="(max-width: 900px)" srcset="800x653/headerPhoto.png">
+          <img src="headerPhoto.jpg" alt='headerPhoto' id='headerPhoto'>
+        </picture>
+      </a>
+    </div>
+
+    <div class="item2" id='menu'>
+      <br>
+      <img id='img_me' src='img_me.jpg' width="150" height="150" alt='Image of me' onclick="changeImage()">
+      <h2 class='menuContent' id='menuName'>Ιωάννης Φουρφουρής</h2>
+      <p class='menuContent' id='menuDescription'>Φοιτητητής του <a href="https://www.aueb.gr/"
+          id='whiteLink' target="_blank">Οικονομικού
+          <br>Πανεπιστημιού Αθηνών</a></p>
+      <br>
+      <div class="vertical-menu">
+        <a href="index.html" class="active">Σχετικά με μένα</a>
+        <a href="projects.html" id='whiteLink2'>Ακαδημαϊκές Εργασίες</a>
+        <a href="hobbies.html" id='whiteLink3'>Ενδιαφέροντα</a>
+        <a href="contact.html" id='whiteLink4'>Επικοινωνία</a>
+        <a href="prototypes.html" id='whiteLink5'>Πρωτότυπα</a>
+      </div>
+      <br><br><br><br><br><br>
+      <div class="flex-container-menu">
+        <div>
+          <a href="https://www.facebook.com/giannisfourfouris" target="_blank">
+            <picture>
+              <source media="(max-width: 600px)" srcset="480x320/fb_logo.png">
+              <source media="(max-width: 900px)" srcset="800x653/fb_logo.png">
+                <img src="fb_logo.png"  alt='fb_logo' id='fb_logo'>
+            </picture>
+          </a>
+          <a href="https://gr.linkedin.com/in/giannis-fourfouris-83b37819b" target="_blank">
+            <picture>
+              <source media="(max-width: 600px)" srcset="480x320/linked_in_logo.png">
+              <source media="(max-width: 900px)" srcset="800x653/linked_in_logo.png">
+                <img src="linked_in_logo.png" alt='linked_in_logo' id='linked_in_logo'>
+            </picture>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="item3" id='Main'>
+      <video  controls>
+        <source src="myVideo.mp4" type="video/mp4">
+      </video>
+      <h1 id='about'>Σχετικά με εμένα</h1>
+      Καλωσορίσατε στην ιστοσελίδα μου. Είμαι Φοιτητής στο <a href="https://www.dept.aueb.gr/el/cs">Τμήμα
+        Πληροφορικής</a> του
+      <a href="https://www.aueb.gr/">Οικονομικού Πανεπιστημιού Αθηνών (ΟΠΑ)</a>. Το έτος εισαγωγής μου είναι το
+      2015 και ευελπιστώ να
+      τελειώσω μέχρι το Σεπτέμβριο του 2020.
+      <h3>Εκπαίδευση</h3>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;Σεπτέμβριος 2015 - Σήμερα</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.aueb.gr/">Οικονομικό Πανεπιστήμιο Αθηνών</a></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.dept.aueb.gr/el/cs">Τμήμα Πληροφορικής</a></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;Μέσος όρος: 7.06</div>
+      <br>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;Σεπτέμβριος 2012 - Σεπτέμβριος 2015</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://lyk-samis.kef.sch.gr/">Γενικό Λύκειο Σάμης</a></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;Απολυτήριο Γενικού Λυκείου</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;Βαθμός: Λίαν Καλώς (17.1)</div>
+      <p>
+        Τα ενδιαφέροντα μου στο πλαίσιο της Πληροφορικής περιλαμβάνουν:</p>
+      <ul>
+        <li>Μηχανική Μάθηση</li>
+        <li>Τεχνητή Νοημοσύνη</li>
+        <li>Βαθιά Νευρωνικά Δίκτυα</li>
+      </ul>
+      Οι υπόλοιπες σελίδες περιλαμβάνουν <a href="projects.html" id='projects'>ακαδημαϊκές εργασίες</a>, <a
+        href="hobbies.html">ενδιαφέροντα</a> και κάποιους
+      τρόπους <a href="contact.html">επικοινωνίας</a>.<br>
+      Σας ευχαριστώ πολύ για το χρόνο σας!
+    </div>
+
+    <div class="item4" id='Footer'>
+      <br>
+      <div class='lineFooter'>
+        <br>
+        <img src='hermes.png' width="100" height="100" alt='hermes' id='hermes'>
+        <img src='LogoSmallPlhroforikh.png' width="180" height="75" alt='LogoSmallPlhroforikh'
+          id='LogoSmallPlhroforikh'>
+      </div>
+      <br><br><br><br><br> <br>
+      <div class='lineFooter'>
+        <br>
+        <div id="copyright">&copy; Giannis Fourfouris.All rights reserved.
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

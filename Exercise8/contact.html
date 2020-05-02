@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ιωάννης Φουρφουρής - Επικοινωνία</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1" id='Header'>
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 600px)" srcset="480x320/headerPhoto.png">
+                <source media="(max-width: 900px)" srcset="800x653/headerPhoto.png">
+                    <img src="headerPhoto.jpg" alt='headerPhoto' id='headerPhoto'>
+              </picture>
+            </a>
+          </div>
+        <div class="item2" id='menu'>
+            <br>
+            <img src='img_me.jpg' width="150" height="150" alt='Image of me' id='img_me' onclick="changeImage()">
+            <h2 class='menuContent' id='menuName'>Ιωάννης Φουρφουρής</h2>
+            <p class='menuContent' id='menuDescription'>Φοιτητητής του <a href="https://www.aueb.gr/"
+                id='whiteLink' target="_blank">Οικονομικού
+                    <br>Πανεπιστημιού Αθηνών</a></p>
+            <br>
+            <div class="vertical-menu">
+                <a href="index.html" id='whiteLink2'>Σχετικά με μένα</a>
+                <a href="projects.html" id='whiteLink3'>Ακαδημαϊκές Εργασίες</a>
+                <a href="hobbies.html" id='whiteLink4'>Ενδιαφέροντα</a>
+                <a href="contact.html" class="active">Επικοινωνία</a>
+                <a href="prototypes.html" id='whiteLink5'>Πρωτότυπα</a>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="flex-container-menu">
+                <div>
+                    <a href="https://www.facebook.com/giannisfourfouris" target="_blank">
+                        <picture>
+                          <source media="(max-width: 600px)" srcset="480x320/fb_logo.png">
+                          <source media="(max-width: 900px)" srcset="800x653/fb_logo.png">
+                            <img src="fb_logo.png"  alt='fb_logo' id='fb_logo'>
+                        </picture>
+                      </a>
+                      <a href="https://gr.linkedin.com/in/giannis-fourfouris-83b37819b" target="_blank">
+                        <picture>
+                          <source media="(max-width: 600px)" srcset="480x320/linked_in_logo.png">
+                          <source media="(max-width: 900px)" srcset="800x653/linked_in_logo.png">
+                            <img src="linked_in_logo.png" alt='linked_in_logo' id='linked_in_logo'>
+                        </picture>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="item3" id='Main'>
+            <h1 id='about'>Επικοινωνία</h1>
+            <div><h2 id="footerTitle"><ins>Παρακάλω συμπληρώστε τα παρακάτω στοιχεία.</ins></h2></div>
+            <form action="mailto:giannisfourfouris@gmail.com" method="post" enctype="text/plain">
+                <div class="flex-container" id='flex-container'>
+                    <div>Όνομα:<br>
+                        <input type="text" name="Name" id="Name" onchange="myFunctionUpper()" onfocus="myFunctionChangeForm(this)" required>
+                    </div>
+                    <div>Email:<br>
+                        <input type="email" name="Email" id="Email"  required onfocus="myFunctionChangeForm(this)"></div>
+                    <div>Θέμα:<br>
+                        <input type="text" name="Subject" id="Subject" onchange="myFunctionUpper()" onfocus="myFunctionChangeForm(this)"></div>
+                    <div>Μήνυμα:<br>
+                        <textarea name="Message" id="Message" rows="10" cols="20" onfocus="myFunctionChangeForm(this)"></textarea></div>
+                </div>
+
+                <br>
+                <button onclick='changeFooterTitle()' type="submit" >ΑΠΟΣΤΟΛΗ</button>
+            </form>
+
+        </div>
+
+        <div class="item4" id='Footer'>
+            <br>
+            <div class='lineFooter'>
+                <br>
+                <img src='hermes.png' width="100" height="100" alt='hermes' id='hermes'>
+                <img src='LogoSmallPlhroforikh.png' width="180" height="75" alt='LogoSmallPlhroforikh'
+                    id='LogoSmallPlhroforikh'>
+            </div>
+            <br><br><br><br><br> <br>
+            <div class='lineFooter'>
+                <br>
+                <div id="copyright">&copy; Giannis Fourfouris.All rights reserved.
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+
+</html>

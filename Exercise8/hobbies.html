@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ιωάννης Φουρφουρής - Ενδιαφέροντα</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1" id='Header'>
+            <a href="index.html">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="480x320/headerPhoto.png">
+                    <source media="(max-width: 900px)" srcset="800x653/headerPhoto.png">
+                        <img src="headerPhoto.jpg" alt='headerPhoto' id='headerPhoto'>
+                </picture>
+            </a>
+        </div>
+        <div class="item2" id='menu'>
+            <br>
+            <img src='img_me.jpg' width="150" height="150" alt='Image of me' id='img_me' onclick="changeImage()">
+            <h2 class='menuContent' id='menuName'>Ιωάννης Φουρφουρής</h2>
+            <p class='menuContent' id='menuDescription'>Φοιτητητής του <a href="https://www.aueb.gr/"
+                    id='whiteLink' target="_blank">Οικονομικού
+                    <br>Πανεπιστημιού Αθηνών</a></p>
+            <br>
+            <div class="vertical-menu">
+                <a href="index.html" id='whiteLink2'>Σχετικά με μένα</a>
+                <a href="projects.html" id='whiteLink3'>Ακαδημαϊκές Εργασίες</a>
+                <a href="hobbies.html" class="active">Ενδιαφέροντα</a>
+                <a href="contact.html" id='whiteLink4'>Επικοινωνία</a>
+                <a href="prototypes.html" id='whiteLink5'>Πρωτότυπα</a>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="flex-container-menu">
+                <div>
+                    <a href="https://www.facebook.com/giannisfourfouris" target="_blank">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="480x320/fb_logo.png">
+                            <source media="(max-width: 900px)" srcset="800x653/fb_logo.png">
+                                <img src="fb_logo.png"  alt='fb_logo' id='fb_logo'>
+                        </picture>
+                    </a>
+                    <a href="https://gr.linkedin.com/in/giannis-fourfouris-83b37819b" target="_blank">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="480x320/linked_in_logo.png">
+                            <source media="(max-width: 900px)" srcset="800x653/linked_in_logo.png">
+                                <img src="linked_in_logo.png" alt='linked_in_logo' id='linked_in_logo'>
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item3" id='Main'>
+            <h1 id='about'>Ενδιαφέροντα</h1>
+            Τα κυριότερα Ενδιαφέροντα μου είναι:
+            <ul>
+                <li>Ερασιτεχνική ενασχόληση με το ποδόσφαιρο</li>
+                <li>Συχνά ταξίδια εντός και εκτός Ελλάδας</li>
+                <li>Κολύμβηση</li>
+                <li>Ποδηλασία</li>
+                <li>Φυτοκομία</li>
+            </ul>
+            Μπορείς επίσης να με κάνεις follow στο <a href='https://www.facebook.com/giannisfourfouris'
+                target="_blank">FaceBook</a> ή στο
+            <a href="https://www.instagram.com/giannisfourfouris/" target="_blank">Instagram</a> προκείμενου να δείτε
+            τις φωτογραφίες μου.
+
+        </div>
+
+        <div class="item4" id='Footer'>
+            <br>
+            <div class='lineFooter'>
+                <br>
+                <img src='hermes.png' width="100" height="100" alt='hermes' id='hermes'>
+                <img src='LogoSmallPlhroforikh.png' width="180" height="75" alt='LogoSmallPlhroforikh'
+                    id='LogoSmallPlhroforikh'>
+            </div>
+            <br><br><br><br><br> <br>
+            <div class='lineFooter'>
+                <br>
+                <div id="copyright">&copy; Giannis Fourfouris.All rights reserved.
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+
+</html>
